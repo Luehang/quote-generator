@@ -1,0 +1,115 @@
+/********************************************
+GENERAL
+*********************************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #808080;
+  background-image: url("https://wallpaperscraft.com/image/space_universe_nebula_star_light_95356_1920x1080.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+section {
+  margin: 10px auto;
+  width: 85%;
+}
+
+h1, p {
+  text-align: center;
+}
+
+section h1 {
+  font-family: 'Monoton', Arial Black;
+  color: #fff;
+  font-size: 2.5em;
+}
+
+p {
+  font-family: 'Orbitron', Courier New;
+}
+
+button p {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+ul.button-grid {
+  margin: 5px 5px 25px;
+  padding: 0;
+}
+
+ul .search {
+  margin: 10px;
+}
+
+button {
+  margin: 10px auto;
+  background-color: #d8d8d8;
+  padding: 10px 30px;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.5) inset;
+}
+
+button:hover {
+  color: #7d1b7e;
+  text-shadow: 1px 1px 5px #7d1b7e;
+  background-color: #b8b8b8;
+  cursor: pointer;
+}
+
+button:active {
+  color: #fff;
+  background-color: #d8d8d8;
+}
+
+.selected {
+  color: #7d1b7e;
+  background-color: #b0b0b0;
+}
+
+ul.photo-grid {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-grid li {
+  margin: 5px 5px;
+}
+
+.image {
+  max-width: 300px;
+}
+
+@media (max-width = 480px) {
+
+}
+
+@media (max-width = 735px) and (orientation: landscape) {
+
+}
+
+@media (max-width = 1005px) {
+  ul.button-grid {
+    flex-direction: column;
+  }
+}
